@@ -1,5 +1,7 @@
 `use strict`;
 
+console.log('----------------->\n--> Designed By Jonas Schmedtmann');
+
 const messageElement = document.querySelectorAll('.user-nav__icon-box')[1];
 const userElement = document.querySelector('.user-nav__user');
 const userPop = document.querySelector('.user-nav__popup');
