@@ -1,6 +1,8 @@
 `use strict`;
 
-console.log('----------------->\n--> Designed By Jonas Schmedtmann');
+console.log(
+  '----------------------------------->\n--> Designed By Jonas Schmedtmannm\n-->Built by Thomas Reynolds\n----------------------------------->'
+);
 
 const messageElement = document.querySelectorAll('.user-nav__icon-box')[1];
 const userElement = document.querySelector('.user-nav__user');
