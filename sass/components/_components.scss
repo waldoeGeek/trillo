@@ -98,7 +98,7 @@
   &__user:hover &__popup {
     opacity: 1;
     height: auto;
-    // display: inline-block;
+    display: inline-block;
   }
 
   &__icon-box {
@@ -107,7 +107,7 @@
 
   &__icon-box:hover &__chat-box {
     opacity: 1;
-    // display: inline-block;
+    display: inline-block;
   }
 
   &__icon {
@@ -139,8 +139,8 @@
 
   &__popup {
     opacity: 0;
-    // display: none;
-    // height: auto;
+    display: none;
+    height: auto;
     position: absolute;
     top: 7rem;
     // right: 35.4rem;
@@ -152,7 +152,7 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.4);
-    transition: opacity 0.3s ease-in;
+    transition: opacity 2s ease-in-out;
     height: 0;
     @media only screen and (max-width: $bp-small) {
       top: 6rem;
@@ -237,7 +237,7 @@
 
   &__chat-box {
     opacity: 0;
-    // display: none;
+    display: none;
     min-width: 30rem;
     position: absolute;
     top: 6.5rem;
@@ -249,7 +249,7 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.4);
-    transition: opacity 0.3s;
+    transition: all 0.5s;
     height: 30rem;
     overflow: scroll;
 
