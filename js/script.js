@@ -1,9 +1,5 @@
 `use strict`;
 
-console.log(
-  '----------------------------------->\n--> Designed By Jonas Schmedtmannm\n-->Built by Thomas Reynolds\n----------------------------------->'
-);
-
 const messageElement = document.querySelectorAll('.user-nav__icon-box')[1];
 const userElement = document.querySelector('.user-nav__user');
 const userPop = document.querySelector('.user-nav__popup');
@@ -12,9 +8,8 @@ const chatBox = document.querySelector('.user-nav__chat-box');
 let chatIsOpen = false;
 let popIsOpen = false;
 
-console.log(messageElement);
-
-messageElement.addEventListener('touchstart', () => {
+messageElement.addEventListener('touchstart', (e) => {
+  e.preventDefault();
   if (popIsOpen) {
     userPop.classList.remove('open');
     chatBox.classList.toggle('open');
@@ -26,7 +21,8 @@ messageElement.addEventListener('touchstart', () => {
   }
 });
 
-userElement.addEventListener('touchstart', () => {
+userElement.addEventListener('touchstart', (e) => {
+  e.preventDefault();
   if (chatIsOpen) {
     chatBox.classList.remove('open');
     userPop.classList.toggle('open');
